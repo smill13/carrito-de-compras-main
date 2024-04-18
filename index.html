@@ -20,17 +20,22 @@
     </header>
     <section class="search-container">
         <div class="search-bar">
-            <input id="search-input" type="search" placeholder="Búsqueda por productos y categorías." name="search" pattern=".*\S.*"
-                required>
+            <input id="search-input" type="search" placeholder="Búsqueda por productos y categorías." name="search"
+                pattern=".*\S.*" required>
             <button class="search-btn" type="submit">
                 <i class="fa-solid fa-search fa-lg"></i>
             </button>
         </div>
     </section>
-    <div id="result"></div>
     <section class="contenedor">
         <!-- Contenedor de elementos -->
         <div class="contenedor-items">
+            <div id="empty-result" class="search-container search-result-empty">
+                <img src="./img/empty-result.svg" />
+                <span>
+                    No se encontraron coincidencias en la busqueda.
+                </span>
+            </div>
             <div class="item">
                 <span class="titulo-item">Box Engasse</span>
                 <img src="img/boxengasse.png" alt="" class="img-item">
