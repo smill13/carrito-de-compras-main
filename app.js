@@ -9,6 +9,7 @@ if(document.readyState == 'loading'){
 }
 
 function ready(){
+    document.getElementById("search-input")?.addEventListener("input", console.log);
     
     //Agregremos funcionalidad a los botones eliminar del carrito
     var botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
