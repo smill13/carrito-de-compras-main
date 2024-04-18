@@ -4,16 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" async></script>
     <title>Tienda de Relojes | </title>
 </head>
 <body>
+    
     <header>
-        <h1>Tienda de Relojes</h1>
+        <h2 class="logo">Tienda de Relojes</h2>
+
+    <nav class="navegacion">
+        <a href="#">Inicio</a>
+        <a href="#">Información</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contactos</a>
+
+        <button class="btn">Iniciar Sesión</button>
+    </nav>
+     
     </header>
+    
+    <section class="arribadeto">
+        
+        
+       <!---------------------------------------------------->
+       <div class="fondo">
+        <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
+    
+        <div class="contenedor-form login">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label for="#">Email</label>
+                </div>
+    
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                </div>
+    
+                <div class="recordar">
+                    <label for="#"><input type="checkbox">Recordar Sesión</label>
+                    <a href="#">¿Olvidé la Contraseña?</a>
+                </div>
+    
+                <button type="submit" class="btn">Iniciar Sesión</button>
+    
+                <div class="registrar">
+                    <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+                </div>
+            </form>
+        </div>
+    
+        <div class="contenedor-form registrar">
+            <h2>Registrarse</h2>
+            <form action="#">
+    
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required>
+                    <label for="#">Nombre de Usuario</label>
+                </div>
+    
+    
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label for="#">Email</label>
+                </div>
+    
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                </div>
+    
+                <div class="recordar">
+                    <label for="#"><input type="checkbox">Acepto los terminos y condiciones</label>
+                </div>
+    
+                <button type="submit" class="btn">Registrarme</button>
+    
+                <div class="registrar">
+                    <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+       </div>
+    
+    <!---------------------------------------------------->
+        
+    </section>
+    
     <section class="contenedor">
+        
         <!-- Contenedor de elementos -->
         <div class="contenedor-items">
             <div class="item">
@@ -71,6 +161,7 @@
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
         </div>
+        
         <!-- Carrito de Compras -->
         <div class="carrito" id="carrito">
             <div class="header-carrito">
@@ -122,5 +213,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>
