@@ -1,0 +1,73 @@
+/* Estilos para el sidebar */
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto fuera de la vista */
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 50px; /* Espacio para el botón cuando la barra lateral esté desplegada */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px; /* Ajuste para los elementos de la lista cuando la barra lateral esté desplegada */
+}
+
+#sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+#sidebar ul li:not(:last-child):hover {
+    background-color: #555;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul li:hover > ul {
+    display: block; /* Mostrar los botones cuando se hace hover en "Ordenar" */
+}
+
+#toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1100;
+    color: #fff;
+}
+
+/* Estilos para los botones */
+#sidebar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar button:hover {
+    background-color: #555; /* Se iluminará el botón solo al hacer hover */
+}
+
+#sidebar button:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor de los botones */
+#sidebar ul ul {
+    display: none; /* Ocultar los botones por defecto */
+    list-style-type: none;
+    padding: 0;
+}
