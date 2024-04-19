@@ -23,13 +23,17 @@
     border-bottom: 1px solid #555;
 }
 
-#sidebar ul li:hover {
+#sidebar ul li:not(:last-child):hover {
     background-color: #555;
 }
 
 #sidebar ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+#sidebar ul li:hover > ul {
+    display: block; /* Mostrar los botones cuando se hace hover en "Ordenar" */
 }
 
 #toggle-btn {
@@ -39,5 +43,31 @@
     cursor: pointer;
     z-index: 1100;
     color: #fff;
+}
 
+/* Estilos para los botones */
+#sidebar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar button:hover {
+    background-color: #555; /* Se iluminará el botón solo al hacer hover */
+}
+
+#sidebar button:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor de los botones */
+#sidebar ul ul {
+    display: none; /* Ocultar los botones por defecto */
+    list-style-type: none;
+    padding: 0;
 }
