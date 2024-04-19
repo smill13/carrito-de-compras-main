@@ -31,7 +31,7 @@ function registrar() {
         password: password
     };
 
-    window.open("http://127.0.0.1:3000/HTML/Login", "_blank");
+    window.open("http://127.0.0.1:5500/HTML/Login.html");
     // Descargar el archivo JSON con los datos del usuario
     descargarArchivo(usuario, 'usuario.json');
 }

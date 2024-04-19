@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
               }
           }
           if (found) {
-              window.open("http://127.0.0.1:3000/HTML/main.html", "_blank");
+              window.open("http://127.0.0.1:3000/HTML/main.html");
               // Aquí podrías redirigir al usuario a otra página
           } else {
               alert('Email o contraseña incorrectos');
