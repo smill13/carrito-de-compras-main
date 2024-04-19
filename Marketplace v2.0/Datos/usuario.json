@@ -1,7 +1,0 @@
-[
-    {"nombre":"usuarioEjemplo", "email":"alguien@correo.com", "password":"12345678"},
-    {"nombre":"usuario2Ejemplo", "email":"alguien2@correo.com", "password":"123456789"},
-    {"nombre":"usuario3Ejemplo", "email":"alguien3@correo.com", "password":"1234567899"},
-    {"nombre":"usuario4Ejemplo", "email":"alguien4@correo.com", "password":"123456789900"}
-]
-  
