@@ -1,4 +1,4 @@
-function search(){
+document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("search-input")?.addEventListener("input", async ({ target: { value } }) => {
         const items = document.getElementsByClassName("item");
 
@@ -10,16 +10,14 @@ function search(){
             const price = `${item.children[2].textContent}`.toLowerCase();
 
             if (title.includes(valueLower) || price.includes(valueLower)) {
-                item.classList.remove("item-hide")
+                item.classList.remove("item-hide");
             } else {
-                item.classList.add("item-hide")
+                item.classList.add("item-hide");
             }
         });
 
         const itemsHide = document.getElementsByClassName("item-hide");
         const emptyResult = document.getElementById("empty-result");
-
-        console.log(items.length, itemsHide.length);
 
         if (items.length === itemsHide.length) {
             emptyResult.style.display = "flex";
@@ -27,5 +25,4 @@ function search(){
             emptyResult.style.display = "none";
         }
     });
-
-}
+});
