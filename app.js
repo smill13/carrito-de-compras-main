@@ -221,3 +221,87 @@ iconocerrar.addEventListener("click", () => {
     fondo.classList.remove('active-btn');
 });
 /*---------------------------------------------------------------*/ 
+
+function registerUser(username, email, password) {
+    const userData = {
+        id:'string',
+        name:'string',
+        username: username,
+        email: email,
+        password: password
+    };
+
+    fetch('https://localhost:7037/api/Auth/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error al registrar el usuario');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Aquí puedes trabajar con la respuesta del servidor, por ejemplo, mostrar un mensaje de éxito
+        console.log('Usuario registrado exitosamente:', data);
+    })
+    .catch(error => {
+        console.error('Hubo un problema con la solicitud:', error);
+    });
+}
+
+// Función para iniciar sesión
+function loginUser(email, password) {
+    fetch(`https://localhost:7037/api/Auth/Login?UserName=${email}&Password=${password}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error al iniciar sesión');
+        }
+        return response.json(); // Aquí se devuelve la promesa
+    })
+    .then(data => {
+        console.log('Inicio de sesión exitoso. Token:', data);
+    })
+    .catch(error => {
+        console.error('Hubo un problema con la solicitud:', error);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.querySelector('#loginForm');
+    const emailInput = document.getElementById('emailInput'); // Eliminado el '#'
+    const passwordInput = document.getElementById('passwordInput'); // Eliminado el '#'
+
+    const registerForm = document.querySelector('#registerForm');
+    const userName = document.getElementById('userName');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = userName.value;
+        const emai = email.value;
+        const pass = password.value;
+
+        registerUser(name, emai, pass);
+    });
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+        const email = emailInput.value;
+        const password = passwordInput.value;
+
+        // Llama a la función loginUser con los valores del email y la contraseña
+        loginUser(email, password);
+    });
+});

@@ -1,175 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" async></script>
-    <title>Tienda de Relojes | </title>
-</head>
-<body>
-    
-    <header>
-        <h2 class="logo">Tienda de Relojes</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a2dd6045c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <nav class="navegacion">
+    <title>Tienda de Relojes |</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Tienda de Relojes</h2>
+
+      <nav class="navegacion">
         <a href="#">Inicio</a>
         <a href="#">Información</a>
         <a href="#">Servicios</a>
         <a href="#">Contactos</a>
 
         <button class="btn">Iniciar Sesión</button>
-    </nav>
-     
+      </nav>
     </header>
-    
+
     <section class="arribadeto">
-        
-        
-       <!---------------------------------------------------->
-       <div class="fondo">
+      <!---------------------------------------------------->
+      <div class="fondo">
         <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
-    
+
         <div class="contenedor-form login">
-            <h2>Iniciar Sesión</h2>
-            <form action="#">
-                <div class="contenedor-input">
-                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required>
-                    <label for="#">Email</label>
-                </div>
-    
-                <div class="contenedor-input">
-                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
-                    <label for="#">Contraseña</label>
-                </div>
-    
-                <div class="recordar">
-                    <label for="#"><input type="checkbox">Recordar Sesión</label>
-                    <a href="#">¿Olvidé la Contraseña?</a>
-                </div>
-    
-                <button type="submit" class="btn">Iniciar Sesión</button>
-    
-                <div class="registrar">
-                    <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
-                </div>
-            </form>
-        </div>
-    
-        <div class="contenedor-form registrar">
-            <h2>Registrarse</h2>
-            <form action="#">
-    
-                <div class="contenedor-input">
-                    <span class="icono"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" required>
-                    <label for="#">Nombre de Usuario</label>
-                </div>
-    
-    
-                <div class="contenedor-input">
-                    <span class="icono"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required>
-                    <label for="#">Email</label>
-                </div>
-    
-                <div class="contenedor-input">
-                    <span class="icono"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
-                    <label for="#">Contraseña</label>
-                </div>
-    
-                <div class="recordar">
-                    <label for="#"><input type="checkbox">Acepto los terminos y condiciones</label>
-                </div>
-    
-                <button type="submit" class="btn">Registrarme</button>
-    
-                <div class="registrar">
-                    <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
-                </div>
-            </form>
-        </div>
-       </div>
-    
-    <!---------------------------------------------------->
-        
-    </section>
-    
-    <section class="contenedor">
-        
-        <!-- Contenedor de elementos -->
-        <div class="contenedor-items">
-            <div class="item">
-                <span class="titulo-item">Box Engasse</span>
-                <img src="img/boxengasse.png" alt="" class="img-item">
-                <span class="precio-item">$15.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">English Horse</span>
-                <img src="img/englishrose.png" alt="" class="img-item">
-                <span class="precio-item">$25.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Knock Nap</span>
-                <img src="img/knocknap.png" alt="" class="img-item">
-                <span class="precio-item">$35.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">La Night</span>
-                <img src="img/lanight.png" alt="" class="img-item">
-                <span class="precio-item">$18.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Silver All</span>
-                <img src="img/silverall.png" alt="" class="img-item">
-                <span class="precio-item">$32.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Skin Glam</span>
-                <img src="img/skinglam.png" alt="" class="img-item">
-                <span class="precio-item">$18.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Midimix</span>
-                <img src="img/midimix.png" alt="" class="img-item">
-                <span class="precio-item">$54.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Sir Blue</span>
-                <img src="img/sirblue.png" alt="" class="img-item">
-                <span class="precio-item">$32.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Middlesteel</span>
-                <img src="img/middlesteel.png" alt="" class="img-item">
-                <span class="precio-item">$42.800</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-        </div>
-        
-        <!-- Carrito de Compras -->
-        <div class="carrito" id="carrito">
-            <div class="header-carrito">
-                <h2>Tu Carrito</h2>
+          <h2>Iniciar Sesión</h2>
+          <form action="#" id="loginForm">
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+              <input id="emailInput" type="email" required />
+              <label for="#">Email</label>
             </div>
 
-            <div class="carrito-items">
-                <!-- 
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-lock"></i></span>
+              <input id="passwordInput" type="password" required />
+              <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+              <label for="#"><input type="checkbox" />Recordar Sesión</label>
+              <a href="#">¿Olvidé la Contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn">Iniciar Sesión</button>
+
+            <div class="registrar">
+              <p>
+                ¿No tienes cuenta?
+                <a href="#" class="registrar-link">Registrarse</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="contenedor-form registrar">
+          <h2>Registrarse</h2>
+          <form action="#" id="registerForm">
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-user"></i></span>
+              <input type="text" required id="userName"/>
+              <label for="#">Nombre de Usuario</label>
+            </div>
+
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" required id="email"/>
+              <label for="#">Email</label>
+            </div>
+
+            <div class="contenedor-input">
+              <span class="icono"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required id="password"/>
+              <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+              <label for="#"
+                ><input type="checkbox" />Acepto los terminos y
+                condiciones</label
+              >
+            </div>
+
+            <button type="submit" class="btn">Registrarme</button>
+
+            <div class="registrar">
+              <p>
+                ¿Tienes una cuenta?
+                <a href="#" class="login-link">Iniciar Sesión</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!---------------------------------------------------->
+    </section>
+
+    <section class="contenedor">
+      <!-- Contenedor de elementos -->
+      <div class="contenedor-items">
+        <div class="item">
+          <span class="titulo-item">Box Engasse</span>
+          <img src="img/boxengasse.png" alt="" class="img-item" />
+          <span class="precio-item">$15.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">English Horse</span>
+          <img src="img/englishrose.png" alt="" class="img-item" />
+          <span class="precio-item">$25.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Knock Nap</span>
+          <img src="img/knocknap.png" alt="" class="img-item" />
+          <span class="precio-item">$35.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">La Night</span>
+          <img src="img/lanight.png" alt="" class="img-item" />
+          <span class="precio-item">$18.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Silver All</span>
+          <img src="img/silverall.png" alt="" class="img-item" />
+          <span class="precio-item">$32.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Skin Glam</span>
+          <img src="img/skinglam.png" alt="" class="img-item" />
+          <span class="precio-item">$18.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Midimix</span>
+          <img src="img/midimix.png" alt="" class="img-item" />
+          <span class="precio-item">$54.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Sir Blue</span>
+          <img src="img/sirblue.png" alt="" class="img-item" />
+          <span class="precio-item">$32.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Middlesteel</span>
+          <img src="img/middlesteel.png" alt="" class="img-item" />
+          <span class="precio-item">$42.800</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <!-- Carrito de Compras -->
+      <div class="carrito" id="carrito">
+        <div class="header-carrito">
+          <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+          <!-- 
                 <div class="carrito-item">
                     <img src="img/boxengasse.png" width="80px" alt="">
                     <div class="carrito-item-detalles">
@@ -201,18 +211,19 @@
                    </button>
                 </div>
                  -->
-            </div>
-            <div class="carrito-total">
-                <div class="fila">
-                    <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
-                        $120.000,00
-                    </span>
-                </div>
-                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
-            </div>
         </div>
+        <div class="carrito-total">
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total"> $120.000,00 </span>
+          </div>
+          <button class="btn-pagar">
+            Pagar <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
     </section>
-    
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
